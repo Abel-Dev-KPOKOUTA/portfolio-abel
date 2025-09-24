@@ -59,9 +59,6 @@ $routes->group('api', function($routes) {
 // =============================================
 
 
-$routes->get('login', 'Admin\AuthController::login');
-$routes->post('login', 'Admin\AuthController::attemptLogin');
-$routes->get('logout', 'Admin\AuthController::logout');
 // Routes Admin
 $routes->group('admin', function($routes) {
     // Authentification

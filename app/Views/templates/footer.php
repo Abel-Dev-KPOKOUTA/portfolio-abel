@@ -1,7 +1,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white py-4">
+    <footer class="footer bg-dark text-white py-4 mt-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -32,6 +32,13 @@
                             <a href="mailto:<?= esc($settings['admin_email'] ?? 'abel.kpokouta@example.com') ?>" class="text-white me-3">
                                 <i class="fas fa-envelope fa-lg"></i>
                             </a>
+
+                            <!-- 🔐 LIEN ADMIN - SEULEMENT VISIBLE EN DEVELOPPEMENT -->
+                            <?php if (ENVIRONMENT !== 'production'): ?>
+                            <a href="<?= base_url('/admin/login') ?>" class="text-warning me-3" title="Accès Admin">
+                                <i class="fas fa-lock fa-lg"></i>
+                            </a>
+                            <?php endif; ?>
                         </div>
                         <small>&copy; <?= date('Y') ?> Abel Kpokouta. Tous droits réservés.</small>
                     </div>
@@ -87,3 +94,7 @@
     </script>
 </body>
 </html>
+
+
+
+   
