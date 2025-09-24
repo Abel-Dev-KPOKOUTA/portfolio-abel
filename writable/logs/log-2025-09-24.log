@@ -1,0 +1,169 @@
+ERROR - 2025-09-24 00:00:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:05 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:05 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:05 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:00:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:10 --> Erreur téléchargement CV: Fichier CV non trouvé: abel_kpokouta_cv.pdf
+ERROR - 2025-09-24 00:00:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:10 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:00:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:14 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:00:35 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:35 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:00:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:42 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:00:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:00:59 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:23:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:23:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:37:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:37:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:37:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:37:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:37:49 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-24 00:37:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(108): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-24 00:37:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:37:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:37:55 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:42:43 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:43 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:43 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-24 00:42:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(108): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-24 00:42:47 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:47 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:47 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:42:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:42:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:42:52 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-24 00:42:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(108): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-24 00:43:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:15 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:43:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:18 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:43:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:22 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:43:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:26 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:43:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:28 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:43:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:43:37 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:52:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:52:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:52:57 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:52:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:52:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:52:58 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 00:55:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:56:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:57:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:58:08 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 00:59:05 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:00:51 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:37 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:01:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:52 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:01:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:55 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:01:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:56 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:01:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:01:58 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:02:11 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:11 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:11 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:02:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:15 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:02:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:19 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:02:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:23 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:02:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:25 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:02:33 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:33 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:02:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:02:53 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:04:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:04:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:04:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:04:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:04:03 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:04:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:04:24 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:05:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:05:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:05:03 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:05:08 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:05:08 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:05:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:05:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:05:10 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-24 01:05:11 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-24 01:05:11 --> Erreur getSkillsByCategory: Attempt to read property "category" on array

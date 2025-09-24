@@ -1,0 +1,866 @@
+CRITICAL - 2025-09-23 13:07:58 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 45.
+ 1 APPPATH\Models\PortfolioModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 45)
+ 2 APPPATH\Controllers\BaseController.php(24): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(9): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 13:07:59 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 45.
+ 1 APPPATH\Models\PortfolioModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 45)
+ 2 APPPATH\Controllers\BaseController.php(24): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(9): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:06:31 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:06:32 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:06:35 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:06:38 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(10): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:19:03 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(9): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:19:04 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(9): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:19:05 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(9): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:19:06 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(9): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:19:26 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\BaseController.php(28): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 APPPATH\Controllers\Home.php(9): App\Controllers\BaseController->getCommonData()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:22 --> getCommonData error: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:23:22 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 163.
+ 1 APPPATH\Views\home.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:23 --> getCommonData error: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:23:23 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 163.
+ 1 APPPATH\Views\home.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:24 --> getCommonData error: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:23:24 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 163.
+ 1 APPPATH\Views\home.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(17): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:46 --> getCommonData error: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:23:46 --> Home index error: Attempt to read property "title" on array
+CRITICAL - 2025-09-23 21:23:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home_simple.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_simple.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home_simple', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('home_simple', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:47 --> getCommonData error: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:23:47 --> Home index error: Attempt to read property "title" on array
+CRITICAL - 2025-09-23 21:23:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home_simple.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_simple.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home_simple', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('home_simple', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:48 --> getCommonData error: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:23:48 --> Home index error: Attempt to read property "title" on array
+CRITICAL - 2025-09-23 21:23:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home_simple.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_simple.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home_simple', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('home_simple', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:49 --> getCommonData error: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:23:49 --> Home index error: Attempt to read property "title" on array
+CRITICAL - 2025-09-23 21:23:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home_simple.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_simple.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home_simple', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('home_simple', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:23:50 --> getCommonData error: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:23:50 --> Home index error: Attempt to read property "title" on array
+CRITICAL - 2025-09-23 21:23:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home_simple.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home_simple.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home_simple', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('home_simple', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:27:01 --> ErrorException: Cannot declare class App\Models\PortfolioModel, because the name is already in use
+[Method: GET, Route: /]
+in APPPATH\Models\ProjectModel.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-23 21:27:02 --> ErrorException: Cannot declare class App\Models\PortfolioModel, because the name is already in use
+[Method: GET, Route: /]
+in APPPATH\Models\ProjectModel.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-23 21:27:04 --> ErrorException: Cannot declare class App\Models\PortfolioModel, because the name is already in use
+[Method: GET, Route: /]
+in APPPATH\Models\ProjectModel.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-23 21:27:57 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\Home.php(21): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:27:58 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\Home.php(21): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+CRITICAL - 2025-09-23 21:27:59 --> ErrorException: Attempt to read property "category" on array
+[Method: GET, Route: /]
+in APPPATH\Models\PortfolioModel.php on line 48.
+ 1 APPPATH\Models\PortfolioModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "category" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Models\\PortfolioModel.php', 48)
+ 2 APPPATH\Controllers\Home.php(21): App\Models\PortfolioModel->getSkillsByCategory()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:30:20 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:30:20 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 163.
+ 1 APPPATH\Views\home.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:30:21 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:30:21 --> ErrorException: Attempt to read property "title" on array
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 163.
+ 1 APPPATH\Views\home.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:32:38 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:32:39 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:32:40 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:39:36 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:40:07 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:40:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "messages/contact.php"
+[Method: GET, Route: contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('messages/contact.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('messages/contact', [], true)
+ 3 APPPATH\Controllers\MessageController.php(18): view('messages/contact', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MessageController->contact()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MessageController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:40:09 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:40:48 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:40:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:40:52 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:40:58 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:41:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "projects/index.php"
+[Method: GET, Route: projects]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('projects/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('projects/index', [], true)
+ 3 APPPATH\Controllers\Home.php(71): view('projects/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->projects()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:41:27 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:41:30 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:41:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "messages/contact.php"
+[Method: GET, Route: contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('messages/contact.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('messages/contact', [], true)
+ 3 APPPATH\Controllers\MessageController.php(18): view('messages/contact', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MessageController->contact()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MessageController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:41:32 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:44:36 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:44:45 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:44:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "projects/index.php"
+[Method: GET, Route: projects]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('projects/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('projects/index', [], true)
+ 3 APPPATH\Controllers\Home.php(71): view('projects/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->projects()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:44:58 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:48:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: download-cv]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(112): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('CV non trouvé.')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:48:06 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:48:10 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:48:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "projects/index.php"
+[Method: GET, Route: projects]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('projects/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('projects/index', [], true)
+ 3 APPPATH\Controllers\Home.php(71): view('projects/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->projects()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:48:27 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:20 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:52:25 --> ErrorException: Attempt to read property "featured" on array
+[Method: GET, Route: projects]
+in APPPATH\Views\projects\index.php on line 60.
+ 1 APPPATH\Views\projects\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "featured" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\projects\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\projects\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('projects/index', [], true)
+ 5 APPPATH\Controllers\Home.php(71): view('projects/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->projects()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:52:27 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:29 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:31 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:34 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:48 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:54 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:52:55 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:53:02 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 21:57:10 --> ErrorException: Attempt to read property "featured" on array
+[Method: GET, Route: projects]
+in APPPATH\Views\projects\index.php on line 60.
+ 1 APPPATH\Views\projects\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "featured" on array', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\projects\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\app\\Views\\projects\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('projects/index', [], true)
+ 5 APPPATH\Controllers\Home.php(71): view('projects/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->projects()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 21:58:30 --> Erreur page projets: Attempt to read property "featured" on array
+ERROR - 2025-09-23 21:58:47 --> Erreur page projets: Attempt to read property "featured" on array
+ERROR - 2025-09-23 21:58:52 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:58:52 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:59:17 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:59:23 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 21:59:47 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:00:13 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:00:14 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:00:17 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:00:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:01:11 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:06:37 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:10:57 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:12:21 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 22:42:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:27 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:27 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:33 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:42:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:43:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:43:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:43:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:43:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 22:43:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:16 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:16 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:16 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:02:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:17 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:02:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:23 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:02:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:24 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:02:29 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:29 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:02:29 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:29 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:02:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:32 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:02:33 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:33 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:02:33 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:06:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(116): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\Home::index')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:06:51 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:51 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:51 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:06:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:59 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:06:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:06:59 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:07:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:07:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:16 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:16 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:23 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:23:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:23:32 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:27:47 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:27:47 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:27:47 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:27:47 --> Error: Call to undefined method CodeIgniter\View\View::getAosDelay()
+[Method: GET, Route: accueil]
+in APPPATH\Views\home.php on line 274.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:27:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:27:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:27:49 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:27:49 --> Error: Call to undefined method CodeIgniter\View\View::getAosDelay()
+[Method: GET, Route: accueil]
+in APPPATH\Views\home.php on line 274.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:28:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:28:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:28:24 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:28:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:28:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:28:25 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:29:05 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:29:05 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:29:08 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:29:08 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:29:08 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:29:08 --> Error: Call to undefined method CodeIgniter\View\View::getAosDelay()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 274.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:29:12 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:29:12 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:29:12 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:29:12 --> Error: Call to undefined method CodeIgniter\View\View::getAosDelay()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 274.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:35:01 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:35:01 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:35:01 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:35:01 --> Error: Call to undefined method CodeIgniter\View\View::getEventTypeColorSafe()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 367.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:35:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:35:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:35:02 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:35:02 --> Error: Call to undefined method CodeIgniter\View\View::getEventTypeColorSafe()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 367.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(46): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:39:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:39:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:39:09 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:39:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:39:09 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:39:09 --> Error: Call to undefined method CodeIgniter\View\View::getEventTypeColorSafe()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 367.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(87): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:39:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:39:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:39:14 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:39:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:39:14 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:39:14 --> Error: Call to undefined method CodeIgniter\View\View::getEventTypeColorSafe()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 367.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(87): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:40:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:40:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:40:49 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:40:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:40:49 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:40:49 --> Error: Call to undefined function get_event_type_color()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 368.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(87): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:40:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:40:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:40:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:40:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:40:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-23 23:40:50 --> Error: Call to undefined function get_event_type_color()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 368.
+ 1 SYSTEMPATH\View\View.php(226): include()
+ 2 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(87): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\public\\index.php')
+ERROR - 2025-09-23 23:44:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:22 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:44:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:22 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:44:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:34 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:44:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:44:34 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:00 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:00 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:03 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:03 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:28 --> Erreur téléchargement CV: Fichier CV non trouvé: abel_kpokouta_cv.pdf
+ERROR - 2025-09-23 23:45:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:28 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:32 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:32 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:37 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:39 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:39 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:39 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:39 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:39 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:45:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:45:50 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:51:39 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:51:39 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:51:39 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:51:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:51:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:51:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:51:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:51:59 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:52:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:52:03 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:52:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:52:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:52:07 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:52:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:52:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:52:07 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:53:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:25 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:53:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:53:37 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:54:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:54:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:54:31 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:54:33 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:54:33 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:54:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:54:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:54:38 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:54:43 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:54:43 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:56:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:56:32 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:56:35 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:56:35 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:56:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:56:38 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:57:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:04 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:57:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:10 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:57:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:18 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:57:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:21 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:57:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:57:28 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-23 23:59:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:59:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-23 23:59:58 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
