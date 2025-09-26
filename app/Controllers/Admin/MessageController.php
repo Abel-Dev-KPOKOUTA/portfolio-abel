@@ -77,4 +77,31 @@ class MessageController extends BaseController
             return redirect()->to('/admin/login')->with('error', 'Veuillez vous connecter');
         }
     }
+
+
+    // Dans Admin/MessageController.php - AJOUTER l'archivage
+    public function archive($id)
+    {
+        $this->checkAdminAccess();
+
+        if ($this->messageModel->update($id, ['is_archived' => 1])) {
+            return redirect()->back()->with('success', 'Message archivé');
+        }
+        return redirect()->back()->with('error', 'Erreur lors de l\'archivage');
+    }
+
+    public function archived()
+    {
+        $this->checkAdminAccess();
+
+        $data = [
+            'title' => 'Messages Archivés - Admin',
+            'settings' => $this->settings,
+            'messages' => $this->messageModel->where('is_archived', 1)->orderBy('created_at', 'DESC')->findAll()
+        ];
+
+        return view('admin/messages/archived', $data);
+    }
+
+    
 }

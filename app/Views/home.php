@@ -118,42 +118,52 @@ echo $this->include('templates/header');
                         <?php foreach($experiences as $index => $exp): ?>
                         <div class="timeline-item" data-aos="fade-up" data-aos-delay="<?= $index * 100 ?>">
                             <div class="timeline-content">
+                                <?php 
+                                $title = $exp['title'] ?? $exp->title ?? 'Titre non spécifié';
+                                $type = $exp['type'] ?? $exp->type ?? 'expérience';
+                                $company = $exp['company'] ?? $exp->company ?? 'Organisation non spécifiée';
+                                $location = $exp['location'] ?? $exp->location ?? '';
+                                $startDate = $exp['start_date'] ?? $exp->start_date ?? '';
+                                $endDate = $exp['end_date'] ?? $exp->end_date ?? '';
+                                $currentJob = $exp['current_job'] ?? $exp->current_job ?? false;
+                                $description = $exp['description'] ?? $exp->description ?? '';
+                                $technologies = $exp['technologies'] ?? $exp->technologies ?? '';
+                                ?>
+                                
                                 <div class="d-flex justify-content-between align-items-start mb-2">
-                                    <h5 class="mb-0"><?= esc($exp->title ?? 'Titre non spécifié') ?></h5>
-                                    <span class="badge bg-primary">
-                                        <?= esc(ucfirst($exp->type ?? 'expérience')) ?>
-                                    </span>
+                                    <h5 class="mb-0"><?= esc($title) ?></h5>
+                                    <span class="badge bg-primary"><?= esc(ucfirst($type)) ?></span>
                                 </div>
                                 
                                 <h6 class="text-primary mb-2">
-                                    <i class="fas fa-building me-2"></i><?= esc($exp->company ?? 'Organisation non spécifiée') ?>
-                                    <?php if(isset($exp->location) && !empty($exp->location)): ?>
-                                        <small class="text-muted"> - <?= esc($exp->location) ?></small>
+                                    <i class="fas fa-building me-2"></i><?= esc($company) ?>
+                                    <?php if(!empty($location)): ?>
+                                        <small class="text-muted"> - <?= esc($location) ?></small>
                                     <?php endif; ?>
                                 </h6>
                                 
                                 <div class="timeline-period mb-3">
                                     <small class="text-muted">
                                         <i class="fas fa-calendar-alt me-1"></i>
-                                        <?= isset($exp->start_date) ? date('M Y', strtotime($exp->start_date)) : 'Date de début' ?>
+                                        <?= !empty($startDate) ? date('M Y', strtotime($startDate)) : 'Date de début' ?>
                                         - 
-                                        <?= (isset($exp->current_job) && $exp->current_job) ? 
+                                        <?= $currentJob ? 
                                             '<span class="text-success">En cours</span>' : 
-                                            (isset($exp->end_date) ? date('M Y', strtotime($exp->end_date)) : 'Date de fin') 
+                                            (!empty($endDate) ? date('M Y', strtotime($endDate)) : 'Date de fin') 
                                         ?>
                                     </small>
                                 </div>
                                 
-                                <?php if(isset($exp->description) && !empty($exp->description)): ?>
-                                    <p class="mb-3"><?= esc($exp->description) ?></p>
+                                <?php if(!empty($description)): ?>
+                                    <p class="mb-3"><?= esc($description) ?></p>
                                 <?php endif; ?>
                                 
-                                <?php if(isset($exp->technologies) && !empty($exp->technologies)): ?>
+                                <?php if(!empty($technologies)): ?>
                                     <div class="technologies-tags">
                                         <small class="text-muted d-block mb-2">Technologies utilisées :</small>
                                         <div class="d-flex flex-wrap gap-1">
                                             <?php 
-                                            $techs = explode(',', $exp->technologies);
+                                            $techs = explode(',', $technologies);
                                             foreach($techs as $tech): 
                                                 $tech = trim($tech);
                                                 if (!empty($tech)):
@@ -204,33 +214,39 @@ echo $this->include('templates/header');
                 <?php if(!empty($categorySkills)): ?>
                 <div class="category-section mb-5" data-aos="fade-up">
                     <h4 class="category-title mb-4 text-center">
-                        <i class="fas fa-<?= $this->getCategoryIconSafe($category) ?> me-2"></i>
-                        <?= esc(ucfirst($category)) ?>s
+                        <i class="fas fa-<?= $this->getCategoryIcon($category) ?> me-2"></i>
+                        <?= esc(ucfirst(str_replace('_', ' ', $category))) ?>
                     </h4>
                     <div class="row g-4">
                         <?php foreach($categorySkills as $index => $skill): ?>
                         <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="skill-item text-center" data-aos="fade-up" data-aos-delay="<?= $index * 50 ?>">
-                                <?php if(isset($skill->icon) && $skill->icon): ?>
-                                    <i class="<?= esc($skill->icon) ?> fa-3x mb-3" 
-                                       style="color: <?= esc($skill->color ?? '#3b82f6') ?>"></i>
+                                <?php 
+                                $icon = $skill['icon'] ?? $skill->icon ?? 'code';
+                                $color = $skill['color'] ?? $skill->color ?? '#3b82f6';
+                                $name = $skill['name'] ?? $skill->name ?? 'Compétence';
+                                $level = $skill['level'] ?? $skill->level ?? 0;
+                                ?>
+                                
+                                <?php if(!empty($icon)): ?>
+                                    <i class="<?= esc($icon) ?> fa-3x mb-3" style="color: <?= esc($color) ?>"></i>
                                 <?php else: ?>
                                     <i class="fas fa-code fa-3x mb-3 text-primary"></i>
                                 <?php endif; ?>
                                 
-                                <h6 class="skill-name"><?= esc($skill->name ?? 'Compétence') ?></h6>
+                                <h6 class="skill-name"><?= esc($name) ?></h6>
                                 
                                 <div class="progress mb-2" style="height: 8px;">
                                     <div class="progress-bar" role="progressbar" 
-                                         style="width: <?= $skill->level ?? 0 ?>%; background-color: <?= esc($skill->color ?? '#3b82f6') ?>"
-                                         aria-valuenow="<?= $skill->level ?? 0 ?>" 
+                                         style="width: <?= $level ?>%; background-color: <?= esc($color) ?>"
+                                         aria-valuenow="<?= $level ?>" 
                                          aria-valuemin="0" 
                                          aria-valuemax="100">
                                     </div>
                                 </div>
                                 
-                                <small class="skill-level" style="color: <?= esc($skill->color ?? '#3b82f6') ?>">
-                                    <strong><?= $skill->level ?? 0 ?>%</strong>
+                                <small class="skill-level" style="color: <?= esc($color) ?>">
+                                    <strong><?= $level ?>%</strong>
                                 </small>
                             </div>
                         </div>
@@ -275,23 +291,28 @@ echo $this->include('templates/header');
                     <div class="card card-custom h-100 project-card">
                         <div class="card-body d-flex flex-column">
                             <div class="project-header mb-3">
-                                <?php if(isset($project->featured) && $project->featured): ?>
+                                <?php $isFeatured = $project['featured'] ?? $project->featured ?? false; ?>
+                                <?php if($isFeatured): ?>
                                     <span class="badge bg-warning text-dark featured-badge">
                                         <i class="fas fa-star me-1"></i>Featured
                                     </span>
                                 <?php endif; ?>
                             </div>
                             
-                            <h5 class="card-title"><?= esc($project->title ?? 'Titre du projet') ?></h5>
-                            <p class="card-text flex-grow-1"><?= esc($project->description ?? 'Description du projet') ?></p>
+                            <h5 class="card-title"><?= esc($project['title'] ?? $project->title ?? 'Titre du projet') ?></h5>
+                            <p class="card-text flex-grow-1"><?= esc($project['description'] ?? $project->description ?? 'Description du projet') ?></p>
                             
-                            <?php if(isset($project->technologies) && $project->technologies): ?>
+                            <?php $technologies = $project['technologies'] ?? $project->technologies ?? ''; ?>
+                            <?php if(!empty($technologies)): ?>
                             <div class="technologies mb-3">
                                 <?php 
-                                $techs = explode(',', $project->technologies);
-                                foreach(array_slice($techs, 0, 4) as $tech): ?>
-                                    <span class="badge bg-secondary me-1 mb-1"><?= esc(trim($tech)) ?></span>
-                                <?php endforeach; ?>
+                                $techs = explode(',', $technologies);
+                                foreach(array_slice($techs, 0, 4) as $tech): 
+                                    $tech = trim($tech);
+                                    if (!empty($tech)):
+                                ?>
+                                    <span class="badge bg-secondary me-1 mb-1"><?= esc($tech) ?></span>
+                                <?php endif; endforeach; ?>
                                 <?php if(count($techs) > 4): ?>
                                     <span class="badge bg-light text-dark">+<?= count($techs) - 4 ?> plus</span>
                                 <?php endif; ?>
@@ -299,21 +320,24 @@ echo $this->include('templates/header');
                             <?php endif; ?>
                             
                             <div class="project-actions mt-auto">
-                                <div class="d-flex gap-2">
-                                    <?php if(isset($project->github_url) && $project->github_url && $project->github_url != '#'): ?>
-                                    <a href="<?= esc($project->github_url) ?>" target="_blank" class="btn btn-outline-dark btn-sm">
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <?php $githubUrl = $project['github_url'] ?? $project->github_url ?? ''; ?>
+                                    <?php if(!empty($githubUrl) && $githubUrl != '#'): ?>
+                                    <a href="<?= esc($githubUrl) ?>" target="_blank" class="btn btn-outline-dark btn-sm mb-1">
                                         <i class="fab fa-github"></i> Code
                                     </a>
                                     <?php endif; ?>
                                     
-                                    <?php if(isset($project->demo_url) && $project->demo_url && $project->demo_url != '#'): ?>
-                                    <a href="<?= esc($project->demo_url) ?>" target="_blank" class="btn btn-outline-primary btn-sm">
+                                    <?php $demoUrl = $project['demo_url'] ?? $project->demo_url ?? ''; ?>
+                                    <?php if(!empty($demoUrl) && $demoUrl != '#'): ?>
+                                    <a href="<?= esc($demoUrl) ?>" target="_blank" class="btn btn-outline-primary btn-sm mb-1">
                                         <i class="fas fa-external-link-alt"></i> Demo
                                     </a>
                                     <?php endif; ?>
                                     
-                                    <?php if(isset($project->slug)): ?>
-                                    <a href="<?= base_url('/project/' . $project->slug) ?>" class="btn btn-primary btn-sm">
+                                    <?php $slug = $project['slug'] ?? $project->slug ?? ''; ?>
+                                    <?php if(!empty($slug)): ?>
+                                    <a href="<?= base_url('/project/' . $slug) ?>" class="btn btn-primary btn-sm mb-1">
                                         <i class="fas fa-eye"></i> Détails
                                     </a>
                                     <?php endif; ?>
@@ -363,45 +387,51 @@ echo $this->include('templates/header');
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="<?= $index * 100 ?>">
                 <div class="card card-custom h-100">
                     <div class="card-body">
+                        <?php 
+                        $eventType = $event['type'] ?? $event->type ?? 'événement';
+                        $eventResult = $event['result'] ?? $event->result ?? '';
+                        $eventTitle = $event['title'] ?? $event->title ?? 'Événement';
+                        $eventDescription = $event['description'] ?? $event->description ?? 'Description de l\'événement';
+                        $eventLocation = $event['location'] ?? $event->location ?? 'En ligne';
+                        $eventDate = $event['event_date'] ?? $event->event_date ?? '';
+                        $eventRole = $event['role'] ?? $event->role ?? '';
+                        $eventProjectLink = $event['project_link'] ?? $event->project_link ?? '';
+                        ?>
+                        
                         <div class="d-flex justify-content-between align-items-start mb-3">
-                            <!-- Dans la section Événements, ligne 367 -->
                             <span class="badge bg-primary">
-                                <?= esc(ucfirst($event->type ?? 'événement')) ?>
+                                <?= esc(ucfirst(str_replace('_', ' ', $eventType))) ?>
                             </span>
-
-                            <!-- Dans la section Compétences, remplacez la ligne des icônes par -->
-                            <i class="fas fa-code me-2"></i>
-                            </span>
-                            <?php if(isset($event->result) && !empty($event->result)): ?>
-                                <span class="badge bg-success"><?= esc($event->result) ?></span>
+                            <?php if(!empty($eventResult)): ?>
+                                <span class="badge bg-success"><?= esc($eventResult) ?></span>
                             <?php endif; ?>
                         </div>
                         
-                        <h5 class="card-title"><?= esc($event->title ?? 'Événement') ?></h5>
-                        <p class="card-text"><?= esc($event->description ?? 'Description de l\'événement') ?></p>
+                        <h5 class="card-title"><?= esc($eventTitle) ?></h5>
+                        <p class="card-text"><?= esc($eventDescription) ?></p>
                         
                         <div class="event-meta">
                             <small class="text-muted">
                                 <i class="fas fa-map-marker-alt me-1"></i> 
-                                <?= esc($event->location ?? 'En ligne') ?>
+                                <?= esc($eventLocation) ?>
                             </small>
                             <br>
                             <small class="text-muted">
                                 <i class="fas fa-calendar me-1"></i> 
-                                <?= isset($event->event_date) ? date('d/m/Y', strtotime($event->event_date)) : 'Date non précisée' ?>
+                                <?= !empty($eventDate) ? date('d/m/Y', strtotime($eventDate)) : 'Date non précisée' ?>
                             </small>
-                            <?php if(isset($event->role) && !empty($event->role)): ?>
+                            <?php if(!empty($eventRole)): ?>
                                 <br>
                                 <small class="text-muted">
                                     <i class="fas fa-user me-1"></i> 
-                                    Rôle: <?= esc($event->role) ?>
+                                    Rôle: <?= esc($eventRole) ?>
                                 </small>
                             <?php endif; ?>
                         </div>
                         
-                        <?php if(isset($event->project_link) && !empty($event->project_link)): ?>
+                        <?php if(!empty($eventProjectLink)): ?>
                         <div class="mt-3">
-                            <a href="<?= esc($event->project_link) ?>" target="_blank" class="btn btn-outline-primary btn-sm">
+                            <a href="<?= esc($eventProjectLink) ?>" target="_blank" class="btn btn-outline-primary btn-sm">
                                 <i class="fas fa-external-link-alt me-1"></i> Voir le projet
                             </a>
                         </div>
@@ -541,6 +571,11 @@ echo $this->include('templates/footer');
     
     .timeline-content {
         padding: 20px;
+    }
+    
+    .btn-sm {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
     }
 }
 </style>

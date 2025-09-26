@@ -1,5 +1,5 @@
 <?php 
-echo $this->include('admin/templates/header'); 
+echo $this->include('admin/templates/header');
 ?>
 
 <div class="container-fluid mt-4">
@@ -19,7 +19,7 @@ echo $this->include('admin/templates/header');
                     </span>
                     <div class="dropdown">
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                            <i class="fas fa-user me-1"></i><?= session()->get('admin_username') ?>
+                            <i class="fas fa-user me-1"></i><?= session()->get('admin_username') ?? 'Admin' ?>
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="<?= base_url('/') ?>" target="_blank">
@@ -47,7 +47,7 @@ echo $this->include('admin/templates/header');
                                 Projets
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <?= $stats['total_projects'] ?>
+                                <?= $stats['total_projects'] ?? 0 ?>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -67,7 +67,7 @@ echo $this->include('admin/templates/header');
                                 Projets en vedette
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <?= $stats['featured_projects'] ?>
+                                <?= $stats['featured_projects'] ?? 0 ?>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -87,7 +87,7 @@ echo $this->include('admin/templates/header');
                                 Messages non lus
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <?= $stats['unread_messages'] ?>
+                                <?= $stats['unread_messages'] ?? 0 ?>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -107,7 +107,7 @@ echo $this->include('admin/templates/header');
                                 Total Messages
                             </div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                <?= $stats['total_messages'] ?>
+                                <?= $stats['total_messages'] ?? 0 ?>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -133,21 +133,21 @@ echo $this->include('admin/templates/header');
                         </a>
                     </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-0">
                     <?php if(!empty($recent_messages)): ?>
                         <div class="list-group list-group-flush">
                             <?php foreach($recent_messages as $message): ?>
                             <a href="<?= base_url('/admin/messages/' . $message->id) ?>" 
                                class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h6 class="mb-1"><?= esc($message->name) ?></h6>
-                                    <p class="mb-1 text-muted small"><?= esc($message->subject) ?></p>
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-1"><?= esc($message->name ?? 'Inconnu') ?></h6>
+                                    <p class="mb-1 text-muted small"><?= esc($message->subject ?? 'Sans sujet') ?></p>
                                     <small class="text-muted">
                                         <?= date('d/m/Y H:i', strtotime($message->created_at)) ?>
                                     </small>
                                 </div>
-                                <?php if(!$message->is_read): ?>
-                                    <span class="badge bg-warning">Nouveau</span>
+                                <?php if(!($message->is_read ?? false)): ?>
+                                    <span class="badge bg-warning ms-2">Nouveau</span>
                                 <?php endif; ?>
                             </a>
                             <?php endforeach; ?>
@@ -172,22 +172,27 @@ echo $this->include('admin/templates/header');
                         </a>
                     </div>
                 </div>
-                <div class="card-body">
+                <div class="card-body p-0">
                     <?php if(!empty($recent_projects)): ?>
                         <div class="list-group list-group-flush">
                             <?php foreach($recent_projects as $project): ?>
-                            <a href="<?= base_url('/project/' . $project->slug) ?>" target="_blank"
+                            <a href="<?= base_url('/admin/projets/editer/' . ($project->id ?? '')) ?>" 
                                class="list-group-item list-group-item-action">
                                 <div class="d-flex justify-content-between align-items-start">
                                     <div>
-                                        <h6 class="mb-1"><?= esc($project->title) ?></h6>
+                                        <h6 class="mb-1"><?= esc($project->title ?? 'Titre inconnu') ?></h6>
                                         <small class="text-muted">
                                             <?= date('d/m/Y', strtotime($project->created_at)) ?>
                                         </small>
                                     </div>
-                                    <?php if($project->featured): ?>
-                                        <span class="badge bg-warning">Vedette</span>
-                                    <?php endif; ?>
+                                    <div>
+                                        <?php if($project->featured ?? false): ?>
+                                            <span class="badge bg-warning">Vedette</span>
+                                        <?php endif; ?>
+                                        <?php if(($project->status ?? 'active') === 'inactive'): ?>
+                                            <span class="badge bg-secondary">Inactif</span>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </a>
                             <?php endforeach; ?>
@@ -239,5 +244,5 @@ echo $this->include('admin/templates/header');
 </div>
 
 <?php 
-echo $this->include('admin/templates/footer'); 
+echo $this->include('admin/templates/footer');
 ?>

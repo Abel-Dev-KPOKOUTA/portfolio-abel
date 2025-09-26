@@ -153,6 +153,7 @@ class Home extends BaseController
         ];
     }
 
+
     public function projects()
     {
         try {
@@ -165,8 +166,15 @@ class Home extends BaseController
             if (class_exists('App\Models\PortfolioModel')) {
                 $portfolioModel = new \App\Models\PortfolioModel();
                 
+                // 🔴 UTILISER LA BONNE MÉTHODE
                 $projects = $portfolioModel->getAllProjects();
                 $settings = $portfolioModel->getSettings();
+                
+                // 🔴 DEBUG TEMPORAIRE
+                log_message('info', 'Nombre de projets chargés: ' . count($projects));
+                if (!empty($projects)) {
+                    log_message('info', 'Premier projet: ' . print_r($projects[0], true));
+                }
                 
                 $data['projects'] = is_array($projects) ? $projects : [];
                 $data['settings'] = is_array($settings) ? $settings : $this->getDefaultSettings();
@@ -188,7 +196,8 @@ class Home extends BaseController
             ]);
         }
     }
-    
+
+
     public function downloadCV()
     {
         try {
@@ -260,5 +269,9 @@ class Home extends BaseController
         } else {
             return redirect()->to('/');
         }
+    }
+
+    public function test(){
+        return view('index');
     }
 }

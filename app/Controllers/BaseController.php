@@ -5,7 +5,8 @@ use App\Models\PortfolioModel;
 
 class BaseController extends Controller
 {
-    protected $helpers = ['form', 'url', 'text'];
+    //protected $helpers = ['form', 'url', 'text'];
+    protected $helpers = ['form', 'url', 'text', 'html'];
     protected $portfolioModel;
     protected $settings;
     
@@ -55,7 +56,6 @@ class BaseController extends Controller
         }
     }
 
-
     /**
      * Convertir une date en format "il y a..."
      */
@@ -78,4 +78,17 @@ class BaseController extends Controller
         }
     }
     
+    /**
+     * Obtenir l'icône pour une catégorie de compétence
+     */
+    protected function getCategoryIcon($category)
+    {
+        $icons = [
+            'language' => 'code',
+            'framework' => 'cogs', 
+            'tool' => 'tools',
+            'soft_skill' => 'user'
+        ];
+        return $icons[$category] ?? 'star';
+    }
 }

@@ -9,6 +9,7 @@
 # to override the setting, you must un-comment it by removing the '#'
 # at the beginning of the line.
 #--------------------------------------------------------------------
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # ENVIRONMENT

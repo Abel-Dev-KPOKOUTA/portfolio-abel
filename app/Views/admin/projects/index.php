@@ -69,9 +69,9 @@ echo $this->include('admin/templates/header');
                             <tr>
                                 <td>
                                     <div class="d-flex align-items-center">
-                                        <?php if($project->image): ?>
-                                            <img src="<?= base_url('/assets/images/projects/' . $project->image) ?>" 
-                                                 alt="<?= esc($project->title) ?>" 
+                                        <?php if($project['image']): ?>
+                                            <img src="<?= base_url('/assets/images/projects/' . $project['image']) ?>" 
+                                                 alt="<?= htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') ?>" 
                                                  class="rounded me-3" 
                                                  style="width: 40px; height: 40px; object-fit: cover;">
                                         <?php else: ?>
@@ -81,23 +81,23 @@ echo $this->include('admin/templates/header');
                                             </div>
                                         <?php endif; ?>
                                         <div>
-                                            <strong><?= esc($project->title) ?></strong>
-                                            <?php if($project->featured): ?>
+                                            <strong><?= htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') ?></strong>
+                                            <?php if($project['featured']): ?>
                                                 <span class="badge bg-warning ms-2">Vedette</span>
                                             <?php endif; ?>
                                             <br>
-                                            <small class="text-muted"><?= esc(substr($project->description, 0, 60)) ?>...</small>
+                                            <small class="text-muted"><?= htmlspecialchars(substr($project['description'], 0, 60), ENT_QUOTES, 'UTF-8') ?>...</small>
                                         </div>
                                     </div>
                                 </td>
                                 <td>
                                     <div class="d-flex flex-wrap gap-1">
                                         <?php 
-                                        $techs = explode(',', $project->technologies);
+                                        $techs = explode(',', $project['technologies']);
                                         foreach(array_slice($techs, 0, 3) as $tech): 
                                             $tech = trim($tech);
                                         ?>
-                                            <span class="badge bg-secondary"><?= esc($tech) ?></span>
+                                            <span class="badge bg-secondary"><?= htmlspecialchars($tech, ENT_QUOTES, 'UTF-8') ?></span>
                                         <?php endforeach; ?>
                                         <?php if(count($techs) > 3): ?>
                                             <span class="badge bg-light text-dark">+<?= count($techs) - 3 ?></span>
@@ -105,24 +105,24 @@ echo $this->include('admin/templates/header');
                                     </div>
                                 </td>
                                 <td>
-                                    <span class="badge bg-<?= $project->status == 'active' ? 'success' : 'secondary' ?>">
-                                        <?= $project->status == 'active' ? 'Actif' : 'Inactif' ?>
+                                    <span class="badge bg-<?= $project['status'] == 'active' ? 'success' : 'secondary' ?>">
+                                        <?= $project['status'] == 'active' ? 'Actif' : 'Inactif' ?>
                                     </span>
                                 </td>
                                 <td>
                                     <small class="text-muted">
-                                        <?= date('d/m/Y', strtotime($project->created_at)) ?>
+                                        <?= date('d/m/Y', strtotime($project['created_at'])) ?>
                                     </small>
                                 </td>
                                 <td>
                                     <div class="btn-group btn-group-sm">
-                                        <a href="<?= base_url('/project/' . $project->slug) ?>" 
+                                        <a href="<?= base_url('/project/' . $project['slug']) ?>" 
                                            target="_blank" 
                                            class="btn btn-outline-primary" 
                                            title="Voir sur le site">
                                             <i class="fas fa-eye"></i>
                                         </a>
-                                        <a href="<?= base_url('/admin/projets/editer/' . $project->id) ?>" 
+                                        <a href="<?= base_url('/admin/projets/editer/' . $project['id']) ?>" 
                                            class="btn btn-outline-warning" 
                                            title="Modifier">
                                             <i class="fas fa-edit"></i>
@@ -131,13 +131,13 @@ echo $this->include('admin/templates/header');
                                                 class="btn btn-outline-danger" 
                                                 title="Supprimer"
                                                 data-bs-toggle="modal" 
-                                                data-bs-target="#deleteModal<?= $project->id ?>">
+                                                data-bs-target="#deleteModal<?= $project['id'] ?>">
                                             <i class="fas fa-trash"></i>
                                         </button>
                                     </div>
 
                                     <!-- Modal de suppression -->
-                                    <div class="modal fade" id="deleteModal<?= $project->id ?>" tabindex="-1">
+                                    <div class="modal fade" id="deleteModal<?= $project['id'] ?>" tabindex="-1">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -145,12 +145,12 @@ echo $this->include('admin/templates/header');
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p>Êtes-vous sûr de vouloir supprimer le projet <strong>"<?= esc($project->title) ?>"</strong> ?</p>
+                                                    <p>Êtes-vous sûr de vouloir supprimer le projet <strong>"<?= htmlspecialchars($project['title'], ENT_QUOTES, 'UTF-8') ?>"</strong> ?</p>
                                                     <p class="text-danger"><small>Cette action est irréversible.</small></p>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                                    <a href="<?= base_url('/admin/projets/supprimer/' . $project->id) ?>" 
+                                                    <a href="<?= base_url('/admin/projets/supprimer/' . $project['id']) ?>" 
                                                        class="btn btn-danger">Supprimer</a>
                                                 </div>
                                             </div>

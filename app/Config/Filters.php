@@ -78,6 +78,7 @@ class Filters extends BaseFilters
             // 'invalidchars',
         ],
         'after' => [
+            'toolbar',
             // 'honeypot',
             // 'secureheaders',
         ],
@@ -111,11 +112,11 @@ class Filters extends BaseFilters
     public array $filters = [
         'adminAuth' => [
             'before' => [
-                'admin/*',
-                'admin/dashboard',
-                'admin/projets/*',
-                'admin/messages/*',
-                'admin/parametres'
+                'admin/*', // Protège tout le groupe admin
+            ],
+            'except' => [ // ← EXCEPTER CES PAGES
+                'admin/login',
+                'admin/logout'
             ]
         ]
     ];

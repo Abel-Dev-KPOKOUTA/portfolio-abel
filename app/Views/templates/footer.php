@@ -33,14 +33,19 @@
                                 <i class="fas fa-envelope fa-lg"></i>
                             </a>
 
-                            <!-- 🔐 LIEN ADMIN - SEULEMENT VISIBLE EN DEVELOPPEMENT -->
-                            <?php if (ENVIRONMENT !== 'production'): ?>
-                            <a href="<?= base_url('/admin/login') ?>" class="text-warning me-3" title="Accès Admin">
+                            <!-- 🔐 BOUTON ADMIN -->
+                            <a href="<?= base_url('/admin/login') ?>" class="text-warning me-3" title="Accès Administrateur">
                                 <i class="fas fa-lock fa-lg"></i>
                             </a>
-                            <?php endif; ?>
                         </div>
                         <small>&copy; <?= date('Y') ?> Abel Kpokouta. Tous droits réservés.</small>
+                        
+                        <!-- Lien admin version texte (optionnel) -->
+                        <div class="mt-2">
+                            <a href="<?= base_url('/admin/login') ?>" class="text-warning small text-decoration-none">
+                                <i class="fas fa-user-shield me-1"></i>Accès Administrateur
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

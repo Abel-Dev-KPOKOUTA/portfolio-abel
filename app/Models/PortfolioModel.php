@@ -29,37 +29,43 @@ class PortfolioModel extends Model
     public function getFeaturedProjects($limit = null)
     {
         try {
-            // CORRECTION : Utiliser model() au lieu de new
-            $projectModel = model('ProjectModel');
-            return $projectModel->where('featured', 1)
-                              ->where('status', 'active')
-                              ->orderBy('created_at', 'DESC')
-                              ->findAll($limit);
+            $projectModel = new \App\Models\ProjectModel();
+            $projects = $projectModel->where('featured', 1)
+                                  ->where('status', 'active')
+                                  ->orderBy('created_at', 'DESC');
+            
+            if ($limit) {
+                $projects = $projects->findAll($limit);
+            } else {
+                $projects = $projects->findAll();
+            }
+            
+            return $projects;
         } catch (\Exception $e) {
             log_message('error', 'Erreur getFeaturedProjects: ' . $e->getMessage());
             return [];
         }
     }
     
+  
     public function getAllProjects()
     {
         try {
-            // CORRECTION ICI AUSSI
-            $projectModel = model('ProjectModel');
+            $projectModel = new \App\Models\ProjectModel();
             return $projectModel->where('status', 'active')
-                              ->orderBy('created_at', 'DESC')
-                              ->findAll();
+                            ->orderBy('created_at', 'DESC')
+                            ->findAll();
         } catch (\Exception $e) {
             log_message('error', 'Erreur getAllProjects: ' . $e->getMessage());
             return [];
         }
     }
+
     
     public function getSkillsByCategory()
     {
         try {
-            // CORRECTION ICI AUSSI
-            $skillModel = model('SkillModel');
+            $skillModel = new \App\Models\SkillModel();
             $skills = $skillModel->where('is_active', 1)
                                ->orderBy('display_order', 'ASC')
                                ->findAll();
@@ -78,8 +84,7 @@ class PortfolioModel extends Model
     public function getExperiences()
     {
         try {
-            // CORRECTION ICI AUSSI
-            $experienceModel = model('ExperienceModel');
+            $experienceModel = new \App\Models\ExperienceModel();
             return $experienceModel->orderBy('start_date', 'DESC')->findAll();
         } catch (\Exception $e) {
             log_message('error', 'Erreur getExperiences: ' . $e->getMessage());
@@ -90,11 +95,17 @@ class PortfolioModel extends Model
     public function getFeaturedEvents($limit = 6)
     {
         try {
-            // CORRECTION ICI AUSSI
-            $eventModel = model('EventModel');
-            return $eventModel->where('is_featured', 1)
-                             ->orderBy('event_date', 'DESC')
-                             ->findAll($limit);
+            $eventModel = new \App\Models\EventModel();
+            $events = $eventModel->where('is_featured', 1)
+                               ->orderBy('event_date', 'DESC');
+            
+            if ($limit) {
+                $events = $events->findAll($limit);
+            } else {
+                $events = $events->findAll();
+            }
+            
+            return $events;
         } catch (\Exception $e) {
             log_message('error', 'Erreur getFeaturedEvents: ' . $e->getMessage());
             return [];

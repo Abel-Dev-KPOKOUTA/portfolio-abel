@@ -6,7 +6,7 @@ class AuthController extends BaseController
 {
     public function login()
     {
-        // Si déjà connecté, rediriger vers le dashboard
+        // Rediriger vers le dashboard si déjà connecté
         if (session()->get('admin_logged_in')) {
             return redirect()->to('/admin/dashboard');
         }
@@ -33,9 +33,9 @@ class AuthController extends BaseController
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
 
-        // Vérification des identifiants (à sécuriser en production)
+        // 🔐 IDENTIFIANTS - À CHANGER EN PRODUCTION !
         $validUsername = 'admin';
-        $validPassword = 'Abel2024!'; // À changer en production
+        $validPassword = 'Abel2024!';
 
         if ($username === $validUsername && $password === $validPassword) {
             // Connexion réussie

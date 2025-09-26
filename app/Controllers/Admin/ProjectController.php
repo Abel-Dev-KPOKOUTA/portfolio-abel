@@ -37,6 +37,31 @@ class ProjectController extends BaseController
         return view('admin/projects/create', $data);
     }
 
+
+    public function show($slug)
+    {
+        $projectModel = new ProjectModel();
+        $project = $projectModel->where('slug', $slug)->first();
+        
+        if (!$project || (is_array($project) && empty($project))) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+
+        // Convertir en tableau si c'est un objet
+        if (is_object($project)) {
+            $project = (array)$project;
+        }
+
+        $data = [
+            'title' => $project['title'] . ' - Portfolio',
+            'project' => $project,
+            'settings' => $this->getCommonData()['settings'] // ou votre méthode pour les settings
+        ];
+
+        return view('projects/project_detail', $data);
+    }
+
+
     public function store()
     {
         $this->checkAdminAccess();
@@ -129,24 +154,40 @@ class ProjectController extends BaseController
             'technologies' => $this->request->getPost('technologies'),
             'github_url' => $this->request->getPost('github_url'),
             'demo_url' => $this->request->getPost('demo_url'),
-            'featured' => $this->request->getPost('featured') ? 1 : 0
+            'featured' => $this->request->getPost('featured') ? 1 : 0,
+            'status' => $this->request->getPost('status') ? 'active' : 'inactive'
         ];
 
-        // Gestion de l'upload d'image
+        // Gestion de l'upload d'image - LOGIQUE CORRIGÉE
         $image = $this->request->getFile('image');
+        $removeImage = $this->request->getPost('remove_image');
+
+        // PRIORITÉ 1 : Si une nouvelle image est uploadée
         if ($image && $image->isValid() && !$image->hasMoved()) {
             // Supprimer l'ancienne image si elle existe
-            if ($project->image && file_exists(ROOTPATH . 'public/assets/images/projects/' . $project->image)) {
-                unlink(ROOTPATH . 'public/assets/images/projects/' . $project->image);
+            if (!empty($project['image']) && file_exists(ROOTPATH . 'public/assets/images/projects/' . $project['image'])) {
+                unlink(ROOTPATH . 'public/assets/images/projects/' . $project['image']);
             }
             
             $newName = $image->getRandomName();
             $image->move(ROOTPATH . 'public/assets/images/projects', $newName);
             $projectData['image'] = $newName;
         }
+        // PRIORITÉ 2 : Si la checkbox "supprimer" est cochée ET qu'aucune nouvelle image n'est uploadée
+        else if ($removeImage && !empty($project['image'])) {
+            if (file_exists(ROOTPATH . 'public/assets/images/projects/' . $project['image'])) {
+                unlink(ROOTPATH . 'public/assets/images/projects/' . $project['image']);
+            }
+            $projectData['image'] = null;
+        }
+        // PRIORITÉ 3 : Si on veut garder l'image actuelle (rien ne change)
+        else {
+            // Garder l'image actuelle - pas de modification
+            $projectData['image'] = $project['image'];
+        }
 
         if ($this->projectModel->save($projectData)) {
-            log_message('info', "Projet modifié: {$projectData['title']}");
+            log_message('info', "Projet modifié ID: {$id}");
             return redirect()->to('/admin/projets')->with('success', 'Projet modifié avec succès !');
         }
 
@@ -162,13 +203,13 @@ class ProjectController extends BaseController
             return redirect()->to('/admin/projets')->with('error', 'Projet non trouvé');
         }
 
-        // Supprimer l'image si elle existe
-        if ($project->image && file_exists(ROOTPATH . 'public/assets/images/projects/' . $project->image)) {
-            unlink(ROOTPATH . 'public/assets/images/projects/' . $project->image);
+        // Supprimer l'image si elle existe - SYNTAXE TABLEAU CORRIGÉE
+        if (!empty($project['image']) && file_exists(ROOTPATH . 'public/assets/images/projects/' . $project['image'])) {
+            unlink(ROOTPATH . 'public/assets/images/projects/' . $project['image']);
         }
 
         if ($this->projectModel->delete($id)) {
-            log_message('info', "Projet supprimé: {$project->title}");
+            log_message('info', "Projet supprimé ID: {$id}");
             return redirect()->to('/admin/projets')->with('success', 'Projet supprimé avec succès !');
         }
 
