@@ -58,7 +58,7 @@ class ProjectController extends BaseController
             'settings' => $this->getCommonData()['settings'] // ou votre méthode pour les settings
         ];
 
-        return view('projects/project_detail', $data);
+        return view('project_detail', $data);
     }
 
 

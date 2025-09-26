@@ -839,3 +839,273 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
  7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 10:55:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+CRITICAL - 2025-09-26 10:55:21 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin\ProjectController::show(), 0 passed in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: project/site-ecommerce]
+in APPPATH\Controllers\Admin\ProjectController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->show()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 10:55:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 10:55:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 10:55:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 10:55:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 10:55:27 --> Erreur getSettings: Attempt to read property "setting_key" on array
+CRITICAL - 2025-09-26 10:55:27 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin\ProjectController::show(), 0 passed in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: project/site-ecommerce]
+in APPPATH\Controllers\Admin\ProjectController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin\ProjectController->show()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProjectController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-26 11:20:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: project/site-ecommerce]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(76): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\ProjectController::show')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-26 11:20:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: project/site-ecommerce]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(76): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\ProjectController::show')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 11:20:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:20:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:20:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:20:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+CRITICAL - 2025-09-26 11:21:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: project/site-ecommerce]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(76): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\ProjectController::show')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 11:25:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:25:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:25:05 --> Erreur page projets: Undefined variable $slug
+CRITICAL - 2025-09-26 11:25:05 --> ErrorException: Undefined variable $slug
+[Method: GET, Route: projects]
+in APPPATH\Views\projects\index.php on line 7.
+ 1 APPPATH\Views\projects\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $slug', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\app\\Views\\projects\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\app\\Views\\projects\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('projects/index', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('projects/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->projects()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 11:25:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:25:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:25:06 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 11:25:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:25:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:25:09 --> Erreur page projets: Undefined variable $slug
+CRITICAL - 2025-09-26 11:25:09 --> ErrorException: Undefined variable $slug
+[Method: GET, Route: projects]
+in APPPATH\Views\projects\index.php on line 7.
+ 1 APPPATH\Views\projects\index.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $slug', 'C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\app\\Views\\projects\\index.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\app\\Views\\projects\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('projects/index', [], true)
+ 5 APPPATH\Controllers\Home.php(192): view('projects/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->projects()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 11:25:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:25:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+CRITICAL - 2025-09-26 11:26:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: project/site-ecommerce]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(76): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\ProjectController::show')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-26 11:27:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: project/site-ecommerce]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(76): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\ProjectController::show')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-26 11:27:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: project/site-ecommerce]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(76): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\ProjectController::show')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 11:27:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 11:27:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:15:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:15:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+CRITICAL - 2025-09-26 16:15:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: project/portfolio-codeigniter]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(76): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Controller or its method is not found: \\App\\Controllers\\ProjectController::show')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-26 16:15:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:15:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:16:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:16:22 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 16:16:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:16:53 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 16:52:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:14 --> DashboardController Error: Attempt to read property "created_at" on array
+ERROR - 2025-09-26 16:52:16 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:40 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:41 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:41 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:41 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:41 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:52:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:53:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:53:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:53:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:53:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:53:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:53:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:53:36 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 16:54:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:54:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:54:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:54:17 --> DashboardController Error: Attempt to read property "created_at" on array
+ERROR - 2025-09-26 16:54:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:54:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:54:44 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:54:44 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:56:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:56:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:56:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:56:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:40 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:57:58 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 16:58:11 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:58:11 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 16:58:44 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:58:44 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:58:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:58:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:58:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:58:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:59:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:59:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 16:59:06 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 17:01:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:01:47 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:01:47 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:01:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:01:50 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:01:50 --> DashboardController Error: Attempt to read property "created_at" on array
+ERROR - 2025-09-26 17:02:40 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:02:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:01 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:21 --> DashboardController Error: Attempt to read property "created_at" on array
+ERROR - 2025-09-26 17:03:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:26 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 17:03:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:37 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 17:03:41 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:41 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 17:03:43 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:43 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:03:43 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 17:05:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:05:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:05:17 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-26 17:05:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:05:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:05:21 --> DashboardController Error: Attempt to read property "created_at" on array
+ERROR - 2025-09-26 17:05:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:05:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:05:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-26 17:05:28 --> Erreur getSettings: Attempt to read property "setting_key" on array

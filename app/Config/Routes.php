@@ -1,7 +1,7 @@
 <?php
 
 use App\Controllers\Home;
-use App\Admin\Controllers\ProjectController;
+use App\Controllers\ProjectController;
 use App\Controllers\MessageController;
 
 // =============================================
@@ -16,8 +16,11 @@ $routes->get('/test' , [Home::class, 'test']);
 // Pages projets
 $routes->get('/projets', [Home::class, 'projects']);
 $routes->get('/projects', [Home::class, 'projects']);
-//$routes->get('/projet/(:segment)', [ProjectController::class, 'show']);
-$routes->get('/project/(:segment)','Admin\ProjectController::show');
+
+
+// Par cette version corrigée
+$routes->get('/projet/(:segment)', [ProjectController::class, 'show']);
+$routes->get('/project/(:segment)', [ProjectController::class, 'show']);
 
 
 // Contact
@@ -57,6 +60,7 @@ $routes->group('admin', ['filter' => 'adminAuth'], function($routes) {
     $routes->get('projets/editer/(:num)', 'Admin\ProjectController::edit/$1');
     $routes->post('projets/editer/(:num)', 'Admin\ProjectController::update/$1');
     $routes->get('projets/supprimer/(:num)', 'Admin\ProjectController::delete/$1');
+    
     
     $routes->get('messages', 'Admin\MessageController::index');
     $routes->get('messages/(:num)', 'Admin\MessageController::show/$1');
