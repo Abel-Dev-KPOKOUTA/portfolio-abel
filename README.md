@@ -19,12 +19,12 @@ Mon objectif est de concevoir des solutions innovantes en combinant **programmat
 
 ## 🌍 Accéder au site  
 Dès que GitHub Pages est activé, tu pourras accéder à mon portfolio ici :  
-👉 [https://TON-PSEUDO.github.io/portfolio-abel/](https://TON-PSEUDO.github.io/portfolio-abel/)  
+👉 [https://github.com/Abel-Dev-KPOKOUTA/portfolio-abel](https://github.com/Abel-Dev-KPOKOUTA/portfolio-abel)  
 
 ## 📬 Contact  
 - 📧 Email : kpokoutaabel@hmail.com
-- 💼 LinkedIn : [Ton LinkedIn](https://www.linkedin.com/in/tonprofil)  
-- 🐙 GitHub : [Ton GitHub](https://github.com/Abel-Dev-KPOKOUTA/)
+- 💼 LinkedIn : [Mon LinkedIn](https://www.linkedin.com/in/tonprofil)  
+- 🐙 GitHub : [Mon GitHub](https://github.com/Abel-Dev-KPOKOUTA/)
 
 ---
 
