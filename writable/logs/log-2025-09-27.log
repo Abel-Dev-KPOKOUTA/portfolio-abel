@@ -1,0 +1,284 @@
+CRITICAL - 2025-09-27 00:05:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: assets/images/pro]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:06:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test_contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-27 00:07:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:07:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:07:57 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:07:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:07:59 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:20 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:08:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:24 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:08:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:26 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:08:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:26 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:08:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:26 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:08:27 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:27 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-27 00:08:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: tes_contact.php]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-27 00:08:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:56 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:08:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:08:57 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-27 00:11:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test_contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:11:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test-contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:11:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test-contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-27 00:12:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:28 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:12:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:38 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:12:48 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:12:48 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-27 00:12:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test-contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:12:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test-contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:12:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test-contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:13:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test_contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:14:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: test-contact]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-27 00:17:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:17:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:17:31 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:17:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:17:34 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 00:26:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 00:26:42 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+CRITICAL - 2025-09-27 00:28:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: writable/logs/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:28:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: writable/logs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:28:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: writable/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+CRITICAL - 2025-09-27 00:28:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: GET, Route: logs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Page Not Found')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-27 01:00:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:45 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:00:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:52 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:00:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:53 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:00:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:00:57 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:01:05 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:01:05 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:01:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:01:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:01:07 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:01:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:01:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:01:41 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:00 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:00 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:20 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:02:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:23 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:02:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:26 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:02:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:32 --> Erreur téléchargement CV: Fichier CV non trouvé: abel_kpokouta_cv.pdf
+ERROR - 2025-09-27 01:02:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:32 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:02:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:45 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 01:02:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:55 --> Erreur téléchargement CV: Fichier CV non trouvé: abel_kpokouta_cv.pdf
+ERROR - 2025-09-27 01:02:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 01:02:55 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 14:09:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:09:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:09:13 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 14:09:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:09:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:09:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:23 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-27 14:10:29 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:35 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:35 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-27 14:10:35 --> Erreur getSkillsByCategory: Attempt to read property "category" on array

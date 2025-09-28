@@ -18,8 +18,8 @@ echo $this->include('admin/templates/header');
                         <i class="fas fa-arrow-left me-2"></i>Retour aux messages
                     </a>
                     <div class="btn-group">
-                        <?php if(!$message->is_read): ?>
-                            <form method="POST" action="<?= base_url('/admin/messages/' . $message->id . '/lu') ?>">
+                        <?php if(!$message['is_read']): ?>
+                            <form method="POST" action="<?= base_url('/admin/messages/' . $message['id'] . '/lu') ?>">
                                 <?= csrf_field() ?>
                                 <button type="submit" class="btn btn-success">
                                     <i class="fas fa-check me-2"></i>Marquer comme lu
@@ -44,9 +44,9 @@ echo $this->include('admin/templates/header');
             <div class="card shadow">
                 <div class="card-header bg-white">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h5 class="mb-0 text-primary"><?= esc($message->subject) ?></h5>
-                        <span class="badge bg-<?= $message->is_read ? 'success' : 'warning' ?>">
-                            <?= $message->is_read ? 'Lu' : 'Non lu' ?>
+                        <h5 class="mb-0 text-primary"><?= esc($message['subject']) ?></h5>
+                        <span class="badge bg-<?= $message['is_read'] ? 'success' : 'warning' ?>">
+                            <?= $message['is_read'] ? 'Lu' : 'Non lu' ?>
                         </span>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ echo $this->include('admin/templates/header');
                                 <i class="fas fa-user fa-lg text-primary me-3"></i>
                                 <div>
                                     <strong>Expéditeur</strong><br>
-                                    <?= esc($message->name) ?>
+                                    <?= esc($message['name']) ?>
                                 </div>
                             </div>
                             
@@ -67,8 +67,8 @@ echo $this->include('admin/templates/header');
                                 <i class="fas fa-envelope fa-lg text-primary me-3"></i>
                                 <div>
                                     <strong>Email</strong><br>
-                                    <a href="mailto:<?= esc($message->email) ?>" class="text-decoration-none">
-                                        <?= esc($message->email) ?>
+                                    <a href="mailto:<?= esc($message['email']) ?>" class="text-decoration-none">
+                                        <?= esc($message['email']) ?>
                                     </a>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ echo $this->include('admin/templates/header');
                                 <i class="fas fa-clock fa-lg text-primary me-3"></i>
                                 <div>
                                     <strong>Reçu le</strong><br>
-                                    <?= date('d/m/Y à H:i', strtotime($message->created_at)) ?>
+                                    <?= date('d/m/Y à H:i', strtotime($message['created_at'])) ?>
                                 </div>
                             </div>
                             
@@ -87,7 +87,7 @@ echo $this->include('admin/templates/header');
                                 <i class="fas fa-globe fa-lg text-primary me-3"></i>
                                 <div>
                                     <strong>IP</strong><br>
-                                    <code><?= esc($message->ip_address ?? 'Non disponible') ?></code>
+                                    <code><?= esc($message['ip_address'] ?? 'Non disponible') ?></code>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ echo $this->include('admin/templates/header');
                             <i class="fas fa-align-left me-2"></i>Contenu du message
                         </h6>
                         <div class="bg-light p-4 rounded">
-                            <?= nl2br(esc($message->message)) ?>
+                            <?= nl2br(esc($message['message'])) ?>
                         </div>
                     </div>
 
@@ -111,7 +111,7 @@ echo $this->include('admin/templates/header');
                             <i class="fas fa-reply me-2"></i>Répondre
                         </h6>
                         <div class="d-flex flex-wrap gap-2">
-                            <a href="mailto:<?= esc($message->email) ?>?subject=RE: <?= urlencode($message->subject) ?>" 
+                            <a href="mailto:<?= esc($message['email']) ?>?subject=RE: <?= urlencode($message['subject']) ?>" 
                                class="btn btn-primary" target="_blank">
                                 <i class="fas fa-reply me-2"></i>Répondre par email
                             </a>
@@ -132,7 +132,7 @@ echo $this->include('admin/templates/header');
                         <div class="col-md-6">
                             <small class="text-muted">
                                 <i class="fas fa-info-circle me-1"></i>
-                                Message ID: #<?= $message->id ?>
+                                Message ID: #<?= $message['id'] ?>
                             </small>
                         </div>
                         <div class="col-md-6 text-end">
@@ -147,21 +147,25 @@ echo $this->include('admin/templates/header');
 
             <!-- Navigation entre messages -->
             <div class="d-flex justify-content-between mt-3">
-                <?php if(isset($previous_message)): ?>
-                    <a href="<?= base_url('/admin/messages/' . $previous_message->id) ?>" 
-                       class="btn btn-outline-primary">
-                        <i class="fas fa-chevron-left me-2"></i>Message précédent
-                    </a>
-                <?php else: ?>
-                    <span></span>
-                <?php endif; ?>
+                <a href="<?= base_url('/admin/messages') ?>" class="btn btn-outline-primary">
+                    <i class="fas fa-list me-2"></i>Retour à la liste
+                </a>
                 
-                <?php if(isset($next_message)): ?>
-                    <a href="<?= base_url('/admin/messages/' . $next_message->id) ?>" 
-                       class="btn btn-outline-primary">
-                        Message suivant <i class="fas fa-chevron-right ms-2"></i>
-                    </a>
-                <?php endif; ?>
+                <div class="btn-group">
+                    <?php if(isset($previous_message)): ?>
+                        <a href="<?= base_url('/admin/messages/' . $previous_message['id']) ?>" 
+                           class="btn btn-outline-primary">
+                            <i class="fas fa-chevron-left me-2"></i>Précédent
+                        </a>
+                    <?php endif; ?>
+                    
+                    <?php if(isset($next_message)): ?>
+                        <a href="<?= base_url('/admin/messages/' . $next_message['id']) ?>" 
+                           class="btn btn-outline-primary">
+                            Suivant <i class="fas fa-chevron-right ms-2"></i>
+                        </a>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>
@@ -176,13 +180,13 @@ echo $this->include('admin/templates/header');
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <p>Êtes-vous sûr de vouloir supprimer le message de <strong>"<?= esc($message->name) ?>"</strong> ?</p>
-                <p class="text-muted">Sujet : <?= esc($message->subject) ?></p>
+                <p>Êtes-vous sûr de vouloir supprimer le message de <strong>"<?= esc($message['name']) ?>"</strong> ?</p>
+                <p class="text-muted">Sujet : <?= esc($message['subject']) ?></p>
                 <p class="text-danger"><small>Cette action est irréversible.</small></p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                <a href="<?= base_url('/admin/messages/' . $message->id . '/supprimer') ?>" 
+                <a href="<?= base_url('/admin/messages/' . $message['id'] . '/supprimer') ?>" 
                    class="btn btn-danger">Supprimer</a>
             </div>
         </div>
@@ -192,7 +196,7 @@ echo $this->include('admin/templates/header');
 <script>
 // Copier l'email dans le clipboard
 function copyEmail() {
-    const email = '<?= esc($message->email) ?>';
+    const email = '<?= esc($message['email']) ?>';
     navigator.clipboard.writeText(email).then(() => {
         showToast('Email copié dans le presse-papier !', 'success');
     });
@@ -200,7 +204,7 @@ function copyEmail() {
 
 // Copier le message dans le clipboard
 function copyMessage() {
-    const message = `De: <?= esc($message->name) ?> (<?= esc($message->email) ?>)\nSujet: <?= esc($message->subject) ?>\n\n<?= esc($message->message) ?>`;
+    const message = `De: <?= esc($message['name']) ?> (<?= esc($message['email']) ?>)\nSujet: <?= esc($message['subject']) ?>\n\n<?= esc($message['message']) ?>`;
     navigator.clipboard.writeText(message).then(() => {
         showToast('Message copié dans le presse-papier !', 'success');
     });

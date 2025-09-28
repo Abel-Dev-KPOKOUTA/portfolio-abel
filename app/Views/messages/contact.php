@@ -32,6 +32,14 @@
                             </div>
                         <?php endif; ?>
 
+                        <?php if(session()->getFlashdata('error')): ?>
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <i class="fas fa-exclamation-triangle me-2"></i>
+                                <?= session()->getFlashdata('error') ?>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                        <?php endif; ?>
+
                         <?php if(isset($validation)): ?>
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                                 <i class="fas fa-exclamation-triangle me-2"></i>
@@ -47,7 +55,7 @@
                                 <div class="col-md-6 mb-4">
                                     <label for="name" class="form-label">Votre nom *</label>
                                     <input type="text" class="form-control <?= isset($validation) && $validation->hasError('name') ? 'is-invalid' : '' ?>" 
-                                           id="name" name="name" value="<?= old('name') ?>" required>
+                                           id="name" name="name" value="<?= old('name', '') ?>" required>
                                     <?php if(isset($validation) && $validation->hasError('name')): ?>
                                         <div class="invalid-feedback">
                                             <?= $validation->getError('name') ?>
@@ -58,7 +66,7 @@
                                 <div class="col-md-6 mb-4">
                                     <label for="email" class="form-label">Votre email *</label>
                                     <input type="email" class="form-control <?= isset($validation) && $validation->hasError('email') ? 'is-invalid' : '' ?>" 
-                                           id="email" name="email" value="<?= old('email') ?>" required>
+                                           id="email" name="email" value="<?= old('email', '') ?>" required>
                                     <?php if(isset($validation) && $validation->hasError('email')): ?>
                                         <div class="invalid-feedback">
                                             <?= $validation->getError('email') ?>
@@ -70,7 +78,7 @@
                             <div class="mb-4">
                                 <label for="subject" class="form-label">Sujet *</label>
                                 <input type="text" class="form-control <?= isset($validation) && $validation->hasError('subject') ? 'is-invalid' : '' ?>" 
-                                       id="subject" name="subject" value="<?= old('subject') ?>" required>
+                                       id="subject" name="subject" value="<?= old('subject', '') ?>" required>
                                 <?php if(isset($validation) && $validation->hasError('subject')): ?>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('subject') ?>
@@ -81,7 +89,7 @@
                             <div class="mb-4">
                                 <label for="message" class="form-label">Votre message *</label>
                                 <textarea class="form-control <?= isset($validation) && $validation->hasError('message') ? 'is-invalid' : '' ?>" 
-                                          id="message" name="message" rows="6" required><?= old('message') ?></textarea>
+                                          id="message" name="message" rows="6" required><?= old('message', '') ?></textarea>
                                 <?php if(isset($validation) && $validation->hasError('message')): ?>
                                     <div class="invalid-feedback">
                                         <?= $validation->getError('message') ?>

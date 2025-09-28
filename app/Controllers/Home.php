@@ -37,7 +37,7 @@ class Home extends BaseController
         
         return view('home', $data);
     }
-    
+
     /**
      * Charger les paramètres avec gestion d'erreur
      */
@@ -273,5 +273,5 @@ class Home extends BaseController
 
     public function test(){
         return view('index');
-    }
+    }   
 }
