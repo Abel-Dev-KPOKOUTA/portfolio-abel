@@ -22,9 +22,9 @@ Dès que GitHub Pages est activé, tu pourras accéder à mon portfolio ici :
 👉 [https://TON-PSEUDO.github.io/portfolio-abel/](https://TON-PSEUDO.github.io/portfolio-abel/)  
 
 ## 📬 Contact  
-- 📧 Email : ton.email@example.com  
+- 📧 Email : kpokoutaabel@hmail.com
 - 💼 LinkedIn : [Ton LinkedIn](https://www.linkedin.com/in/tonprofil)  
-- 🐙 GitHub : [Ton GitHub](https://github.com/ton-pseudo)
+- 🐙 GitHub : [Ton GitHub](https://github.com/Abel-Dev-KPOKOUTA/)
 
 ---
 
