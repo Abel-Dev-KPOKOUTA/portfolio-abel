@@ -7,12 +7,11 @@ class MessageModel extends Model
     protected $table      = 'messages';
     protected $primaryKey = 'id';
 
-    // Dans MessageModel.php - AJOUTER les champs
     protected $allowedFields = [
         'name', 'email', 'subject', 'message', 'ip_address', 
-        'user_agent', 'is_read', 'is_archived' // 🔴 AJOUTER
+        'user_agent', 'is_read', 'is_archived'
     ];
 
-    protected $useTimestamps = true;
-    protected $createdField  = 'created_at';
+    // 🔴 CORRECTION DÉFINITIVE
+    protected $useTimestamps = false; // Désactive created_at ET updated_at
 }

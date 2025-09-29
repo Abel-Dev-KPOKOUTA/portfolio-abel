@@ -105,14 +105,16 @@ echo $this->include('admin/templates/header');
                         </div>
                     </div>
 
+                
                     <!-- Actions rapides -->
                     <div class="mt-4">
                         <h6 class="text-primary mb-3">
                             <i class="fas fa-reply me-2"></i>Répondre
                         </h6>
                         <div class="d-flex flex-wrap gap-2">
-                            <a href="mailto:<?= esc($message['email']) ?>?subject=RE: <?= urlencode($message['subject']) ?>" 
-                               class="btn btn-primary" target="_blank">
+                            <!-- 🔴 CORRECTION : Lien mailto amélioré -->
+                            <a href="mailto:<?= esc($message['email']) ?>?subject=RE: <?= urlencode($message['subject']) ?>&body=Bonjour <?= urlencode($message['name']) ?>," 
+                            class="btn btn-primary" target="_blank" id="replyEmail">
                                 <i class="fas fa-reply me-2"></i>Répondre par email
                             </a>
                             
@@ -123,10 +125,15 @@ echo $this->include('admin/templates/header');
                             <button type="button" class="btn btn-outline-secondary" onclick="copyMessage()">
                                 <i class="fas fa-copy me-2"></i>Copier le message
                             </button>
+                            
+                            <!-- 🔴 NOUVEAU : Bouton pour ouvrir Gmail directement -->
+                            <button type="button" class="btn btn-outline-info" onclick="openGmail()">
+                                <i class="fab fa-google me-2"></i>Ouvrir dans Gmail
+                            </button>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="card-footer bg-light">
                     <div class="row">
                         <div class="col-md-6">
@@ -232,8 +239,87 @@ document.addEventListener('keydown', function(e) {
         document.querySelector('a[href^="mailto:"]').click();
     }
 });
+
+// Copier l'email dans le clipboard
+function copyEmail() {
+    const email = '<?= esc($message['email']) ?>';
+    navigator.clipboard.writeText(email).then(() => {
+        showToast('Email copié dans le presse-papier !', 'success');
+    });
+}
+
+// Copier le message dans le clipboard
+function copyMessage() {
+    const message = `De: <?= esc($message['name']) ?> (<?= esc($message['email']) ?>)\nSujet: <?= esc($message['subject']) ?>\n\n<?= esc($message['message']) ?>`;
+    navigator.clipboard.writeText(message).then(() => {
+        showToast('Message copié dans le presse-papier !', 'success');
+    });
+}
+
+// 🔴 NOUVEAU : Ouvrir Gmail directement
+function openGmail() {
+    const email = '<?= esc($message['email']) ?>';
+    const subject = 'RE: <?= esc($message['subject']) ?>';
+    const body = `Bonjour <?= esc($message['name']) ?>,\n\nEn réponse à votre message :\n"<?= esc($message['message']) ?>"\n\n\nCordialement,`;
+    
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailUrl, '_blank');
+}
+
+// 🔴 NOUVEAU : Ouvrir Outlook
+function openOutlook() {
+    const email = '<?= esc($message['email']) ?>';
+    const subject = 'RE: <?= esc($message['subject']) ?>';
+    const body = `Bonjour <?= esc($message['name']) ?>,\n\nEn réponse à votre message :\n"<?= esc($message['message']) ?>"\n\n\nCordialement,`;
+    
+    const outlookUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(email)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(outlookUrl, '_blank');
+}
+
+// 🔴 CORRECTION : Fonction pour afficher les toasts
+function showToast(message, type) {
+    // Supprimer les toasts existants
+    const existingToasts = document.querySelectorAll('.custom-toast');
+    existingToasts.forEach(toast => toast.remove());
+    
+    const toast = document.createElement('div');
+    toast.className = `custom-toast alert alert-${type} position-fixed top-0 end-0 m-3`;
+    toast.style.zIndex = '9999';
+    toast.innerHTML = message;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => toast.remove(), 3000);
+}
+
+// 🔴 NOUVEAU : Détection du client email et action améliorée
+document.addEventListener('DOMContentLoaded', function() {
+    const replyBtn = document.getElementById('replyEmail');
+    
+    replyBtn.addEventListener('click', function(e) {
+        // Optionnel : demander confirmation
+        if (!confirm('Ouvrir votre client email pour répondre à <?= esc($message['name']) ?> ?')) {
+            e.preventDefault();
+        }
+    });
+});
+
+// Raccourcis clavier
+document.addEventListener('keydown', function(e) {
+    // ESC pour retourner à la liste
+    if (e.key === 'Escape') {
+        window.location.href = '<?= base_url('/admin/messages') ?>';
+    }
+    // R pour répondre
+    if (e.key === 'r' && !e.ctrlKey) {
+        document.querySelector('a[href^="mailto:"]').click();
+    }
+    // G pour Gmail
+    if (e.key === 'g' && !e.ctrlKey) {
+        openGmail();
+    }
+});
 </script>
 
-<?php 
+<?php  
 echo $this->include('admin/templates/footer'); 
 ?>

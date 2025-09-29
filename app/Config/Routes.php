@@ -60,10 +60,10 @@ $routes->group('admin', ['filter' => 'adminAuth'], function($routes) {
     $routes->get('projets/editer/(:num)', 'Admin\ProjectController::edit/$1');
     $routes->post('projets/editer/(:num)', 'Admin\ProjectController::update/$1');
     $routes->get('projets/supprimer/(:num)', 'Admin\ProjectController::delete/$1');
-    $routes->get('abel' ,"Admin\MessageController::abel");
 
     $routes->get('messages', 'Admin\MessageController::index');
     $routes->get('messages/(:num)', 'Admin\MessageController::show/$1');
+    
     $routes->post('messages/(:num)/lu', 'Admin\MessageController::markAsRead/$1');
     $routes->get('messages/(:num)/supprimer', 'Admin\MessageController::delete/$1');
     $routes->get('parametres', 'Admin\SettingController::index');

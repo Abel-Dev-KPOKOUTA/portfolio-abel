@@ -1,0 +1,571 @@
+ERROR - 2025-09-29 00:00:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:24 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:00:24 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:00:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:30 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:40 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:40 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:00:40 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:00:40 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:43 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:43 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:00:43 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:00:44 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:00:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:02 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('8', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('8')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:01:02 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:01:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:46 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:46 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:01:46 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:01:46 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:49 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:51 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:51 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:01:51 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:01:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:54 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:54 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:01:54 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:01:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:01:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:06:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:06:20 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:06:20 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:06:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:16:53 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:16:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:16:56 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(200): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:16:56 --> Erreur markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:16:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:18:00 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:18:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:18:03 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(196): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:18:03 --> EXCEPTION: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:18:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:18:05 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:18:05 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(196): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:18:05 --> EXCEPTION: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:18:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:18:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:18:07 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(196): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:18:07 --> EXCEPTION: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:18:08 --> Erreur getSettings: Attempt to read property "setting_key" on array
+CRITICAL - 2025-09-29 00:23:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "errors/404.php"
+[Method: POST, Route: admin/messages/6/lu]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('errors/404.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('errors/404', [], true)
+ 3 APPPATH\Config\Routes.php(79): view('errors/404')
+ 4 SYSTEMPATH\CodeIgniter.php(957): CodeIgniter\Router\RouteCollection->{closure}('Can\'t find a route for \'POST: admin/messages/6/lu\'.')
+ 5 SYSTEMPATH\CodeIgniter.php(360): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\MES PROJETS\\PHP Project\\MON-PORTFOLIO\\portfolio-abel\\public\\index.php')
+ERROR - 2025-09-29 00:24:00 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:24:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:24:17 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(196): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:24:17 --> EXCEPTION: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:24:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:24:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:24:19 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(196): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:24:19 --> EXCEPTION: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:24:20 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:24:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:24:27 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:29:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:29:52 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:29:52 --> EXCEPTION markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:29:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:29:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:29:55 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:29:55 --> EXCEPTION markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:29:55 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:29:55 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:29:55 --> EXCEPTION markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:29:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:30:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:30:13 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:30:13 --> EXCEPTION markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:30:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:30:16 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:30:16 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:30:16 --> EXCEPTION markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:30:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:30:17 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:30:17 --> EXCEPTION markAsRead: Unknown column 'updated_at' in 'field list'
+ERROR - 2025-09-29 00:30:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:33:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:33:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '2025-09-29 00:33:19'
+WHERE `messages`.`id` IN ('6')' at line 1 in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:33:19 --> EXCEPTION markAsRead: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '2025-09-29 00:33:19'
+WHERE `messages`.`id` IN ('6')' at line 1
+ERROR - 2025-09-29 00:33:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:33:22 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:33:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '2025-09-29 00:33:22'
+WHERE `messages`.`id` IN ('6')' at line 1 in C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `message...', 0)
+#1 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `message...')
+#2 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `message...')
+#3 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `message...', Array, false)
+#4 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\app\Controllers\Admin\MessageController.php(190): CodeIgniter\Model->update('6', Array)
+#8 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(933): App\Controllers\Admin\MessageController->markAsRead('6')
+#9 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MessageController))
+#10 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\MES PROJETS\PHP Project\MON-PORTFOLIO\portfolio-abel\system\rewrite.php(44): require_once('C:\\MES PROJETS\\...')
+#15 {main}
+ERROR - 2025-09-29 00:33:22 --> EXCEPTION markAsRead: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '2025-09-29 00:33:22'
+WHERE `messages`.`id` IN ('6')' at line 1
+ERROR - 2025-09-29 00:33:23 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:35:12 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:35:16 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:35:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:08 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:32 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:37:58 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:02 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:04 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:06 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:09 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:11 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:12 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:14 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:19 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:38:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:39:56 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:39:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:40:24 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:40:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:40:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:43:33 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:47:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:47:27 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:47:28 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:47:33 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:47:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:47:42 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:47:45 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:48:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:48:07 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:48:10 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:15 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:25 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:25 --> DashboardController Error: Attempt to read property "id" on array
+ERROR - 2025-09-29 00:49:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:31 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:31 --> Erreur getSkillsByCategory: Attempt to read property "category" on array
+ERROR - 2025-09-29 00:49:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:35 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:35 --> DashboardController Error: Attempt to read property "id" on array
+ERROR - 2025-09-29 00:49:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:43 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:51 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:49:54 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:50:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:50:11 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:50:11 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:50:21 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:50:37 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:55:03 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:55:38 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:55:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:57:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:59:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:59:34 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 00:59:57 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:01:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:01:29 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:01:36 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:01:52 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:03:18 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:03:18 --> DashboardController Error: Attempt to read property "id" on array
+ERROR - 2025-09-29 01:05:17 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:05:35 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:05:39 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:10:26 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:11:13 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:11:48 --> Erreur getSettings: Attempt to read property "setting_key" on array
+ERROR - 2025-09-29 01:12:49 --> Erreur getSettings: Attempt to read property "setting_key" on array

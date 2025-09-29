@@ -1,0 +1,2 @@
+__ci_last_regenerate|i:1759106112;_ci_previous_url|s:38:"http://localhost:8080/admin/messages/6";admin_logged_in|b:1;admin_username|s:5:"admin";admin_login_time|i:1759094621;error|s:210:"Erreur: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= '2025-09-29 00:33:22'
+WHERE `messages`.`id` IN ('6')' at line 1";__ci_vars|a:1:{s:5:"error";s:3:"old";}

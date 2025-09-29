@@ -42,29 +42,136 @@ class MessageController extends BaseController
 
 
 
-    public function show($id)
+
+
+
+
+/*
+    public function show($id = null)
     {
         $this->checkAdminAccess();
 
+        if ($id === null) {
+            return redirect()->to('/admin/messages')->with('error', 'Aucun message spécifié');
+        }
+
+        // Utiliser l'instance existante de messageModel
         $message = $this->messageModel->find($id);
+        
         if (!$message) {
             return redirect()->to('/admin/messages')->with('error', 'Message non trouvé');
         }
 
-        // ✅ Conversion en OBJET
-        if (is_array($message)) {
-            $message = (object)$message;
+        // 🔴 CORRECTION : Marquer comme lu de façon plus robuste
+        if (!$message['is_read']) {
+            try {
+                $this->messageModel->update($id, ['is_read' => 1]);
+                // Recharger le message pour avoir la version mise à jour
+                $message = $this->messageModel->find($id);
+            } catch (\Exception $e) {
+                log_message('error', 'Erreur marquage message lu: ' . $e->getMessage());
+            }
         }
 
-        // Marquer comme lu (syntaxe OBJET)
-        if (!$message->is_read) {
-            $this->messageModel->update($id, ['is_read' => 1]);
+        // 🔴 CORRECTION : Navigation avec la même instance
+        try {
+            $previous_message = $this->messageModel
+                ->where('id <', $id)
+                ->orderBy('id', 'DESC')
+                ->first();
+
+            $next_message = $this->messageModel
+                ->where('id >', $id)
+                ->orderBy('id', 'ASC')
+                ->first();
+        } catch (\Exception $e) {
+            log_message('error', 'Erreur navigation messages: ' . $e->getMessage());
+            $previous_message = null;
+            $next_message = null;
         }
 
         $data = [
-            'title' => 'Message - Admin',
+            'title' => 'Message - ' . $message['subject'],
             'settings' => $this->settings,
-            'message' => $message
+            'message' => $message,
+            'previous_message' => $previous_message,
+            'next_message' => $next_message
+        ];
+
+        return view('admin/messages/show', $data);
+    }
+
+    
+
+
+
+
+
+
+    public function markAsRead($id)
+    {
+        $this->checkAdminAccess();
+
+        $message = $this->messageModel->find($id);
+        
+        if (!$message) {
+            return redirect()->to('/admin/messages')->with('error', 'Message non trouvé');
+        }
+
+        // Marquer comme lu
+        try {
+            $this->messageModel->update($id, ['is_read' => 1]);
+            return redirect()->back()->with('success', 'Message marqué comme lu');
+        } catch (\Exception $e) {
+            log_message('error', 'Erreur markAsRead: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Erreur lors du marquage comme lu');
+        }
+    }
+
+*/
+
+
+    public function show($id = null)
+    {
+        $this->checkAdminAccess();
+
+        if ($id === null) {
+            return redirect()->to('/admin/messages')->with('error', 'Aucun message spécifié');
+        }
+
+        // Utiliser l'instance existante de messageModel
+        $message = $this->messageModel->find($id);
+        
+        if (!$message) {
+            return redirect()->to('/admin/messages')->with('error', 'Message non trouvé');
+        }
+
+        // 🔴 SUPPRIMER le marquage automatique ici
+        // Le message sera marqué comme lu SEULEMENT via le bouton
+        
+        // Navigation avec la même instance
+        try {
+            $previous_message = $this->messageModel
+                ->where('id <', $id)
+                ->orderBy('id', 'DESC')
+                ->first();
+
+            $next_message = $this->messageModel
+                ->where('id >', $id)
+                ->orderBy('id', 'ASC')
+                ->first();
+        } catch (\Exception $e) {
+            log_message('error', 'Erreur navigation messages: ' . $e->getMessage());
+            $previous_message = null;
+            $next_message = null;
+        }
+
+        $data = [
+            'title' => 'Message - ' . $message['subject'],
+            'settings' => $this->settings,
+            'message' => $message,
+            'previous_message' => $previous_message,
+            'next_message' => $next_message
         ];
 
         return view('admin/messages/show', $data);
@@ -73,24 +180,33 @@ class MessageController extends BaseController
 
 
 
-
-    
-
     public function markAsRead($id)
     {
         $this->checkAdminAccess();
 
-        $message = $this->messageModel->find($id);
-        if (!$message) {
-            return redirect()->to('/admin/messages')->with('error', 'Message non trouvé');
-        }
+        try {
+            $db = \Config\Database::connect();
+            
+            // Marquer le message comme lu
+            $result = $db->table('messages')
+                        ->where('id', $id)
+                        ->set('is_read', 1)
+                        ->update();
 
-        if ($this->messageModel->update($id, ['is_read' => 1])) {
-            return redirect()->back()->with('success', 'Message marqué comme lu');
-        }
+            if ($result) {
+                return redirect()->back()->with('success', 'Message marqué comme lu avec succès !');
+            } else {
+                return redirect()->back()->with('error', 'Erreur lors du marquage du message');
+            }
 
-        return redirect()->back()->with('error', 'Erreur lors du marquage du message');
+        } catch (\Exception $e) {
+            log_message('error', 'Erreur markAsRead: ' . $e->getMessage());
+            return redirect()->back()->with('error', 'Erreur technique');
+        }
     }
+
+
+
 
 
     public function delete($id)

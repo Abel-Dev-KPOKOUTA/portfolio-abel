@@ -111,34 +111,13 @@ echo $this->include('admin/templates/header');
                                     <?php endif; ?>
                                     
                                     <button type="button" 
-                                            class="btn btn-outline-danger" 
+                                            class="btn btn-outline-danger delete-btn" 
                                             title="Supprimer"
-                                            data-bs-toggle="modal" 
-                                            data-bs-target="#deleteModal<?= $message['id'] ?>">
+                                            data-message-id="<?= $message['id'] ?>"
+                                            data-message-name="<?= esc($message['name']) ?>"
+                                            data-message-subject="<?= esc($message['subject']) ?>">
                                         <i class="fas fa-trash"></i>
                                     </button>
-                                </div>
-
-                                <!-- Modal de suppression -->
-                                <div class="modal fade" id="deleteModal<?= $message['id'] ?>" tabindex="-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">Confirmer la suppression</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <p>Êtes-vous sûr de vouloir supprimer le message de <strong>"<?= esc($message['name']) ?>"</strong> ?</p>
-                                                <p class="text-muted">Sujet : <?= esc($message['subject']) ?></p>
-                                                <p class="text-danger"><small>Cette action est irréversible.</small></p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                                <a href="<?= base_url('/admin/messages/' . $message['id'] . '/supprimer') ?>" 
-                                                   class="btn btn-danger">Supprimer</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -156,9 +135,31 @@ echo $this->include('admin/templates/header');
     </div>
 </div>
 
+<!-- 🔴 CORRECTION : UN SEUL MODAL DYNAMIQUE -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirmer la suppression</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Êtes-vous sûr de vouloir supprimer le message de <strong id="deleteMessageName"></strong> ?</p>
+                <p class="text-muted">Sujet : <span id="deleteMessageSubject"></span></p>
+                <p class="text-danger"><small>Cette action est irréversible.</small></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                <a href="#" id="confirmDeleteBtn" class="btn btn-danger">Supprimer</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
-// Recherche en temps réel simplifiée
+// 🔴 CORRECTION : Gestion des modals avec UN SEUL MODAL DYNAMIQUE
 document.addEventListener('DOMContentLoaded', function() {
+    // Recherche en temps réel
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
         searchInput.addEventListener('input', function() {
@@ -171,6 +172,36 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // 🔴 CORRECTION : Gestion de la suppression avec modal unique
+    const deleteModal = new bootstrap.Modal(document.getElementById('deleteModal'));
+    const deleteButtons = document.querySelectorAll('.delete-btn');
+    const deleteMessageName = document.getElementById('deleteMessageName');
+    const deleteMessageSubject = document.getElementById('deleteMessageSubject');
+    const confirmDeleteBtn = document.getElementById('confirmDeleteBtn');
+
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const messageId = this.getAttribute('data-message-id');
+            const messageName = this.getAttribute('data-message-name');
+            const messageSubject = this.getAttribute('data-message-subject');
+            
+            // Mettre à jour le modal avec les données du message
+            deleteMessageName.textContent = '"' + messageName + '"';
+            deleteMessageSubject.textContent = messageSubject;
+            confirmDeleteBtn.href = '<?= base_url('/admin/messages/') ?>' + messageId + '/supprimer';
+            
+            // Afficher le modal
+            deleteModal.show();
+        });
+    });
+
+    // 🔴 CORRECTION : Nettoyage quand le modal est fermé
+    document.getElementById('deleteModal').addEventListener('hidden.bs.modal', function () {
+        deleteMessageName.textContent = '';
+        deleteMessageSubject.textContent = '';
+        confirmDeleteBtn.href = '#';
+    });
 });
 </script>
 
